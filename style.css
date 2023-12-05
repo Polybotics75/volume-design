@@ -1,0 +1,67 @@
+.container{
+    width: 2.5rem;
+    min-height: 5rem;
+    padding: 0.6rem;
+    border-radius: 2rem;
+    background: var(--dpale1);
+    box-shadow: 3px 3px 5px var(--black1);
+    flex-direction: column;
+    gap: 35px;
+}
+
+.volume-rate{
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--white);
+    text-shadow: 0 0 1.5px var(--lwhite);
+}
+
+.volume-btn-tab{
+    flex-direction: column;
+    gap: 7px;
+}
+
+.volume-btn{
+    min-width: 1.8rem;
+    width: 1.8rem;
+    height: 1.8rem;
+    background: var(--dpale2);
+    box-shadow: 1px 1px 2px var(--black1);
+    font-size: 18px;
+    color: var(--white);
+    text-shadow: 0 0 2px var(--lwhite);
+    cursor: pointer;
+}
+.volume-btn.clicked{
+    box-shadow: inset 1px 1px 2px var(--black1), 0 0 1px var(--black2);
+}
+
+
+.volume-slide-tab{
+    width: 10px;
+    height: 200px;
+    border-radius: 20px;
+    background: var(--black1);
+    overflow: hidden;
+    position: relative;
+}
+.volume-slide{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 0%;
+}
+.volume-slide.low{
+    background: var(--success);
+}
+.volume-slide.high{
+    background: var(--danger);
+}
+
+
+
+
+
+
+
+

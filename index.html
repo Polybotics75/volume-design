@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<!-- Primary Meta Tags -->
+<title>Volume Feature With HTML, CSS & JS - Polybotics </title>
+<meta name="title" content="Volume Feature With HTML, CSS & JS - Polybotics " />
+<meta name="description" content="beautiful volume feature with HTML, CSS & JS by Polybotics " />
+
+
+
+
+<!--FONTAWESOME-->
+<script src="https://kit.fontawesome.com/5d4dc46553.js" crossorigin="anonymous"></script>
+
+
+
+<!--STYLESHEETS-->
+<link rel="stylesheet" href="./general.css">
+<link rel="stylesheet" href="./style.css"
+
+</head>
+
+<body class="center">
+
+    <div class="container flex ac jc">
+        <div class="volume-rate">0</div>
+        
+        <div class="volume-slide-tab">
+            <div class="volume-slide low fw"></div>
+            <input type="range" min="0" max="10" value="1" id="volume" hidden>
+        </div>
+        
+        <div class="volume-btn-tab fw flex ac jc">
+            <div onclick="volumeClick(event)" id="plus" class="volume-btn round flex ac jc"><i class="fa fa-plus"></i></div>
+            <div onclick="volumeClick(event)" id="minus" class="volume-btn round flex ac jc"><i class="fa fa-minus"></i></div>
+        </div>
+    </div>
+
+
+<!--SCRIPTS-->
+<script src="./script.js"></script>
+</body>
+</html>
